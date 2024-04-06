@@ -1,7 +1,9 @@
-<h2>Your question:</h2>
-<p><%= @question %></p>
+<div style="margin-left: 15px;">
+  <h2>Stupid Coaching:</h2>
+  <p><%= @question %></p>
+  <p>-You</p>
 
-<h2>Coach's answer:</h2>
-<p><%= @answer %></p>
-
-<%= link_to "Back to asking", ask_path %>
+  <p><%= @answer %></p>
+  <p>-Your coach</p>
+  <%= link_to "Ask a new question", ask_path %>
+</div>

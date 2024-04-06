@@ -1,6 +1,13 @@
-<h1>Ask your coach anything</h1>
+<h1>Stupid Coaching</h1>
+<p>Ask your coach anything:</p>
 
-<%= form_tag("/answer", method: "get") do %>
-  <%= text_field_tag(:question) %>
-  <%= submit_tag("Ask!") %>
-<% end %>
+<div class="search-bar">
+  <%= form_tag("/answer", method: "get") do %>
+    <div class="search-input">
+      <%= text_field_tag(:question) %>
+    </div>
+    <div class="submit-button">
+      <%= submit_tag("Ask", class: "btn btn-primary") %>
+    </div>
+  <% end %>
+</div>

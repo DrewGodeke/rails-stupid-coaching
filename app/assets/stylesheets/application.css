@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+ h1, p {
+  margin-left: 15px; /* Add margin from the left */
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-left: 10px; /* Add margin from the left */
+  margin-right: 10px; /* Add margin from the right */
+}
+
+.search-input {
+  flex: 1; /* Take up remaining space */
+  margin-right: 10px; /* Add spacing between input and button */
+}
+
+.submit-button {
+  margin-left: 15px; /* Add margin between input and button */
+}
